@@ -1,0 +1,10 @@
+/* Hier müssen noch Stylen definiert werden*/
+
+/* assets/css/tailwind.css */
+
+/* Fix der Warunungen https://flaviocopes.com/fix-unknown-at-rule-tailwind/ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
