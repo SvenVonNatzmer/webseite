@@ -1,0 +1,27 @@
+.employee-profile {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .employee-profile h2 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1.5rem;
+  }
+  
+  .employee-profile p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .employee-profile blockquote {
+    margin-top: 15px;
+    font-style: italic;
+    color: #666;
+    border-left: 4px solid #0073e6;
+    padding-left: 15px;
+  }
