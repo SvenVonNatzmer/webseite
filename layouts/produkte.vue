@@ -1,7 +1,7 @@
 <template>
     <div class="min-h-screen flex flex-col">
         <!-- Header -->
-         <!--Quelle: Vorlage Prof. Dr. Kraus und https://www.youtube.com/watch?v=X9ta1grG1j0&list=PL4cUxeGkcC9haQlqdCQyYmL_27TesCGPC&index=6 (Nuxt 3 Crash Course #5 - NuxtLink)-->
+        <!--Quelle: Vorlage Prof. Dr. Kraus und https://www.youtube.com/watch?v=X9ta1grG1j0&list=PL4cUxeGkcC9haQlqdCQyYmL_27TesCGPC&index=6 (Nuxt 3 Crash Course #5 - NuxtLink)-->
         <header class="shadow-sm bg-white">
             <nav class="container mx-auto p-4 flex justify-between">
                 <NuxtLink to="/" class="font-bold">IT-Beratung Schmeichler</NuxtLink>
@@ -19,17 +19,23 @@
                         <NuxtLink class="btn-light" to="/karriere">Karriere</NuxtLink>
                     </li>
                     <li>
-                      <NuxtLink class="btn-light" to="/Partner">Partner</NuxtLink>
-                  </li>
+                        <NuxtLink class="btn-light" to="/Partner">Partner</NuxtLink>
+                    </li>
+                    <li v-if="user">
+                        <button class="btn" @click="logOut">Logout</button>
+                    </li>
+                    <li v-if="!user">
+                        <NuxtLink class="btn" to="/login">Login</NuxtLink>
+                    </li>
                 </ul>
             </nav>
         </header>
-    
+
         <!-- Hauptinhalt -->
         <main class="flex-grow container mx-auto p-4">
             <NuxtPage /> <!-- Hier wird der Seiteninhalt gerendert -->
         </main>
-    
+
         <!-- Footer -->
         <footer class="shadow-sm bg-gray-100">
             <nav class="container mx-auto p-4 flex justify-between">
@@ -51,8 +57,23 @@
             </nav>
         </footer>
     </div>
-    </template>
-    
+</template>
+
+<script>
+export default {
+    data() {
+        return {
+            user: null, // Zustand des Benutzers (null = nicht eingeloggt)
+        };
+    },
+    methods: {
+        logOut() {
+            this.user = null; // Benutzer ausloggen
+            // Zusätzliche Logout-Logik wie das Entfernen von Tokens oder API-Aufrufe hier hinzufügen
+        },
+    },
+};
+</script>
 
 <style scoped>
 .router-link-exact-active {

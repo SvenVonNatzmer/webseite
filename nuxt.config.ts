@@ -5,8 +5,9 @@
 // 
 
 
+
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxtjs/supabase'],
 
   app: {
     head: {
@@ -21,6 +22,6 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: '2024-11-05'
-}) 
+})
 
-  
+

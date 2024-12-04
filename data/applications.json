@@ -1,0 +1,6 @@
+
+[
+
+  "------WebKitFormBoundarygchbA2urV5Co9TTZ\r\nContent-Disposition: form-data; name=\"fullName\"\r\n\r\nMax Muster\r\n------WebKitFormBoundarygchbA2urV5Co9TTZ\r\nContent-Disposition: form-data; name=\"email\"\r\n\r\nmuster@max.de\r\n------WebKitFormBoundarygchbA2urV5Co9TTZ\r\nContent-Disposition: form-data; name=\"phone\"\r\n\r\n01240424020\r\n------WebKitFormBoundarygchbA2urV5Co9TTZ\r\nContent-Disposition: form-data; name=\"resume\"; filename=\"Neues Textdokument.txt\"\r\nContent-Type: text/plain\r\n\r\nEine Bewerbung in einem TXT Format zum Testen\r\n------WebKitFormBoundarygchbA2urV5Co9TTZ\r\nContent-Disposition: form-data; name=\"message\"\r\n\r\nTeste. \r\n------WebKitFormBoundarygchbA2urV5Co9TTZ\r\nContent-Disposition: form-data; name=\"question1\"\r\n\r\nTeste\r\n------WebKitFormBoundarygchbA2urV5Co9TTZ\r\nContent-Disposition: form-data; name=\"question2\"\r\n\r\nTeste\r\n------WebKitFormBoundarygchbA2urV5Co9TTZ\r\nContent-Disposition: form-data; name=\"question3\"\r\n\r\nTeste\r\n------WebKitFormBoundarygchbA2urV5Co9TTZ--\r\n"
+]
+
